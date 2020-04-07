@@ -1,0 +1,31 @@
+<script>
+    function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function fun(x,n){
+        if(x===null) return;
+        else if(!+x) {
+            x = prompt("Ввидите число!",)
+            return fun(x,n);
+        }
+        else if(x>n){
+            x = prompt("Загаданное число меньше",)
+            return fun(x,n);
+        }
+        else if(x<n){
+            x = prompt("Загаданное число больше",)
+            return fun(x,n);
+        }
+        else if(n==x) alert("Поздравляю, вы угодали число!");
+    }
+
+    
+    
+    let n = random(1, 100);
+    let x = prompt("Угодайте число",);
+    console.log("Загаданое число "+n);
+    
+    
+
+fun(x,n);
+</script>
